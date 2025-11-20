@@ -12,6 +12,8 @@ public class Studentopimp implements StudentOperations{
 	public void addstudent(Student s) {
 		
 		//to be implemented by Arun
+		studentlist.add(s);
+		
 	}
 	
 	@Override
