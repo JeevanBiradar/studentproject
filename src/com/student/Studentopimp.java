@@ -50,9 +50,19 @@ public class Studentopimp implements StudentOperations{
 	@Override
 	public void updatestudent(int id,Student newdetail) {
 		
-		//to be implemented by jeevan
-		
-	}
-	
+		for (int i = 0; i < studentlist.size(); i++) {
+            Student s = studentlist.get(i);
 
+            if (s.getRollnumber() == id) {
+                s.setName(newdetail.getName());
+                s.setDepartment(newdetail.getDepartment());
+                s.setMarks(newdetail.getMarks());
+                System.out.println("Student updated : " + id);
+                return;
+            }
+        }
+
+        System.out.println("Student not found : " + id);
+    }
+		
 }
