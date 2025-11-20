@@ -15,7 +15,10 @@ public class StudentDriver {
 	  Studentopimp s = new Studentopimp();
 	  
 	      s.addstudent(s1);
-	      
+	      s.addstudent(s2);
+	      s.addstudent(s3);
+	      s.addstudent(s4);
+	      s.addstudent(s5);
 	      
 	      System.out.println(s.findstudentbyid(2));
 	      
