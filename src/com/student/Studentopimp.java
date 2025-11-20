@@ -24,8 +24,17 @@ public class Studentopimp implements StudentOperations{
 
 	@Override
 	public void deletestudent(int id) {
-
-		//to be implemented by Ragin
+		Student found = null;
+	    for (Student ele : studentlist) {
+	        if (ele.getRollnumber() == id) {
+	            found = ele;
+	            break;
+	        }
+	    }
+	    if (found != null) {
+	        studentlist.remove(found);
+	    }
+		
 	}
 
 	@Override
