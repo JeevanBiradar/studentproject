@@ -17,9 +17,15 @@ public class Studentopimp implements StudentOperations{
 	@Override
 	public Student findstudentbyid(int id) {
 
-	     //to be implemented by Meghana
-		return null;
-	}
+		    for (Student s : studentlist) {
+		        if (s.getRollnumber() == 2) {
+		            return s;   
+		        }
+		    }
+
+		    return null;   
+		}
+
 
 
 	@Override
